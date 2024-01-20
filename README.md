@@ -1,3 +1,3 @@
 # pinecone-examples
 
-Miscellaneous Pinecone code examples
+Miscellaneous Pinecone Examples
