@@ -14,9 +14,9 @@ http.use_ssl = true
 request = Net::HTTP::Post.new(url)
 request["accept"] = 'application/json'
 request["content-type"] = 'application/json'
-request["Api-Key"] = '0a86091c-a5b2-4ac0-8bff-a7bf4449feae'
+request["Api-Key"] = 'CHANGEME'
 
-create-index-body = {
+create_index_body = {
   name: 'my-index',
   dimension: 1536,
   metric: 'cosine',
@@ -28,6 +28,6 @@ create-index-body = {
   }
 }
 
-request.body = JSON.generate(create-index-body)
+request.body = JSON.generate(create_index_body)
 response = http.request(request)
 puts response.read_body
